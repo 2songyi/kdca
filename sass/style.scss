@@ -1,2 +1,12 @@
 @charset "UTF-8";
-body {background: red;}
+
+@import "var.scss"; //변수
+@import "initial.scss";
+@import "common.scss"; //공통 요소
+@import "component.scss";
+@import "layout.scss";
+@import "mixin.scss";
+
+// 페이지 분화
+@import "main.scss";
+@import "subpage.scss"; //각 서브페이지마다 분화시키기

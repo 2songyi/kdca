@@ -1,0 +1,221 @@
+// main page
+// main-visual
+main#container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  .main_visual {
+    padding: 0 0 6rem;
+    background: #f5f6fa;
+    .content {
+      margin: 0 auto;
+      width: 1180px;
+      position: relative;
+      .top_visual {
+        overflow: hidden;
+        max-height: 438px;
+        .pc {
+          display: block;
+          .main-slide {
+            position: relative;
+          }
+        }
+      }
+      .ad_wrap {
+        width: 100%;
+        overflow: hidden;
+        ul {
+          padding: 2rem 0 0;
+          margin: 0 -0.5rem;
+          li {
+            float: left;
+            padding: 0 0 .5rem 1rem;
+            line-height: 2.9rem;
+            width: calc(25% - 1rem);
+            &:nth-child(1) a { border-bottom-color: #00b997; }
+            &:nth-child(2) a { border-bottom-color: #00a8c2; }
+            &:nth-child(3) a { border-bottom-color: #495667; }
+            &:nth-child(4) a { border-bottom-color: #8c6238; }
+            a {
+              overflow: hidden;
+              display: block;
+              background: #fff;
+              font-size: .9rem;
+              text-align: center;
+              border-bottom: 2px solid;
+              span {
+                display: block;
+                overflow: hidden;
+              }
+              em {
+                display: block;
+                // margin: 1rem 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// box-area
+#container {
+  .box_area {
+    margin: 0 auto;
+    width: 1180px;
+    .quick_link {
+      position: relative;
+      margin-top: -5rem;
+      padding: 0 1.3rem 0 11rem;
+      background: #fff;
+      h2 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12.5rem;
+        text-align: center;
+      }
+      ul {
+        display: table;
+        width: 100%;
+        text-align: center;
+        height: 10rem;
+        li {
+          display: table-cell;
+          width: 16.6%;
+          vertical-align: middle;
+          a {
+            display: block;
+            font-size: .75em;
+            color: #555;
+            letter-spacing: -1px;
+            &:before {
+              content: '';
+              display: block;
+              margin: 0 auto .5rem;
+              width: 70px;
+              height: 70px;
+              background: url('../img/main/ico_quick_link.png') no-repeat;
+            }
+          }
+          &.ico1 a:before { background-position: 0 top; }
+          &.ico2 a:before { background-position: -80px top; }
+          &.ico3 a:before { background-position: -160px top; }
+          &.ico4 a:before { background-position: -240px top; }
+          &.ico5 a:before { background-position: -320px top; }
+          &.ico6 a:before { background-position: -400px top; }
+        }
+      }
+    }
+    // 뉴스 탭 영역
+    .col2 {
+      padding: .5rem 0 1.25rem;
+      & > *:first-child {
+        float: left;
+        width: 780px;
+      }
+      .news {
+        position: relative;
+        padding: 0 1.7rem 0.85rem;
+        height: 262px;
+        border: 1px solid #e1e6eb;
+        box-sizing: border-box;
+        background: #fff;
+        .tabs2 {
+          height: 230px;
+          & > ul {
+            border-bottom: 1px solid #e1e6eb;
+            & > li {
+              float: left;
+              padding: 0 .8rem;
+            }
+          }
+          .tab_con {
+            position: absolute;
+            left: 0;
+            right: 0;
+            // top: 4.85rem;
+            padding: 1.75rem 1.7rem 0;
+            & > a {
+              float: left;
+              width: 50%;
+              h2 {
+                font-size: 21px;
+                color: #333;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                span.emphasis {
+                  color: #333;
+                  width: auto;
+                  letter-spacing: -1px;
+                  display: inline-block;
+                  vertical-align: middle;
+                  overflow: hidden;
+                  max-width: 93%;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+              p {
+                padding: .8rem 0 0;
+                font-size: .7rem;
+                line-height: 1.1rem;
+                color: #555;
+                letter-spacing: -1px;
+              }
+              & > span {
+                font-size: .7rem;
+                color: #81868e;
+                line-height: 100%;
+                letter-spacing: -1px;
+                position: absolute;
+                left: 1.7rem;
+                bottom: 0.35rem;
+              }
+            }
+            ul {
+              // 오른쪽 뉴스제목 리스트
+              float: left;
+              width: 50%;
+              margin-top: -6px;
+              padding: 0 0 0 1.5rem;
+              box-sizing: border-box;
+              li {
+                position: relative;
+                padding: 0 0 0 .45rem;
+                &:before {
+                  content:'';
+                  position: absolute;
+                  left: 0;
+                  top: .75rem;
+                  width: 3px;
+                  height: 3px;
+                  background: #444;
+                  border-radius: 100%;
+                }
+                span.ellipsis {
+                  line-height: 1.75rem;
+                  font-size: .75rem;
+                  color: #333;
+                  width: auto;
+                  letter-spacing: -1px;
+                  display: inline-block;
+                  vertical-align: middle;
+                  overflow: hidden;
+                  text-align: left;
+                  max-width: 88%;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+// 공통 layout - header, footer
+// header
+// main > div, header> div > header nav > div {
+//   margin: 0 auto;
+//   width: 1180px;
+// }
+
+header {
+  margin: 0 auto;
+  width: 1180px;
+  .header-wrap {
+    position: relative;
+    h1 {
+      float: left;
+      display: table;
+      height: 5rem;
+      border-collapse: collapse;
+      border-spacing: 0;
+      a {
+        display: tabel-cell;
+        vertical-align: middle;
+        margin: 0;
+        img {
+          width: auto;
+          height: auto;
+          border: none;
+          vertical-align: middle;
+          max-width: 100%;
+        }
+      }
+    }
+    .search {
+      float: left;
+      position: relative;
+      margin: 1.45rem 0 0 5.5rem;
+      font-size: 0;
+      input {
+        width: 17.35rem;
+        height: 2.2rem;
+        box-sizing: border-box;
+        border: 2px solid #32a089;
+        vertical-align: middle;
+        font-size: .8rem;
+        text-indent: .5rem;
+      }
+      a {
+        position: absolute;
+        width: 2.1rem;
+        height: 100%;
+        background: #21a089;
+        font-size: 0;
+        color: transparent;
+        vertical-align: middle;
+        text-align: center;
+        &:after {
+          content: ''; // 아이콘 이미지로 수정하기
+          color: #fff;
+          font-size: 1rem;
+          display: block;
+          padding: 13px 0 0;
+        }
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      clear:both;
+    }
+  }
+  .gnb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #eaeef3;
+    ul {
+      // font-size: 0;
+      text-align: center;
+      li {
+        display: inline-block;
+        padding: 0 20px;
+        &:first-child { padding-left: 0; }
+        &:last-child { padding-right: 0; }
+        a {
+          display: block;
+          position: relative;
+          height: 2.95rem;
+          line-height: 2.95rem;
+          font-size: .95rem;
+          color: #343639;
+        }
+      }
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  clear: both;
+  border-top: 1px solid #d9dde2;
+  .btm {
+    overflow: hidden;
+    padding: 1rem 0 2rem;
+    border-top: 1px solid #f0f1f3;
+    background: #f5f6fa;
+    .sel {
+      float: right;
+      font-size: 0;
+      padding: 0 0 1.5rem;
+      text-align: right;
+      margin-bottom: -1.6rem;
+      width: 1180px;
+      margin: 0 auto;
+      clear: both;
+      position: relative;
+      box-sizing: border-box;
+      .select_type1 {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        margin-right: 4px;
+        float: right;
+        width: calc(17.5% - 4px);
+        h2 {
+          a {
+            display: block;
+            position: relative;
+            padding: 0 0 0 .6rem;
+            height: 1.9rem;
+            line-height: 1.9rem;
+            box-sizing: border-box;
+            background: #f5f6fa;
+            border: 1px solid #d3d8dd;
+            font-size: .7rem;
+            color: #64676c;
+            font-weight: normal;
+            &:after {
+              // 아이콘넣기
+            }
+          }
+        }
+      }
+    }
+    .in_btm {
+      width: 1180px;
+      margin: 0 auto;
+      clear: both;
+      position: relative;
+      box-sizing: border-box;
+      .left {
+        float: left;
+        color: #64676c;
+        font-size: .7rem;
+        line-height: 100%;
+        .move {
+          position: absolute;
+          top: -1.2rem;
+          li {
+            float: left;
+            letter-spacing: -0.5px;
+            padding: 0 8px 0 0;
+            font-weight: bold;
+          }
+        }
+        address {
+          clear: both;
+          padding: 10px 0 0;
+          letter-spacing: -1px;
+          &.top2 {
+            padding-top: 1.5rem;
+          }
+        }
+      }
+      .right {
+        float: right;
+        margin-top: 1.5rem;
+        font-size: 0;
+        img {
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
