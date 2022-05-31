@@ -17,7 +17,7 @@ header {
       border-collapse: collapse;
       border-spacing: 0;
       a {
-        display: tabel-cell;
+        display: table-cell;
         vertical-align: middle;
         margin: 0;
         img {
@@ -52,12 +52,47 @@ header {
         color: transparent;
         vertical-align: middle;
         text-align: center;
+        background-image: url('../img/g_icon/search_icon.png') no-repeat;
         &:after {
-          content: ''; // 아이콘 이미지로 수정하기
-          color: #fff;
-          font-size: 1rem;
-          display: block;
-          padding: 13px 0 0;
+          // content: ''; // 아이콘 이미지로 수정하기
+        }
+      }
+    }
+    .right {
+      float: right;
+      margin-top: 1.9rem;
+      ul.snsArea {
+        display: inline-block;
+        margin-top: -0.25rem;
+        li {
+          float: left;
+          margin-left: 5px;
+          &:first-child {
+            margin-left: 0;
+          }
+          a {
+            display: block;
+            margin: 0;
+            width: 1.75rem;
+            height: 1.75rem;
+            background-image: url('../img/main/icon_header_sns.png');
+            background-repeat: no-repeat;
+            &.sns1 { background-position: 0 top; }
+            &.sns2 { background-position: -2rem top; }
+            &.sns3 { background-position: -4rem top; }
+            &.sns4 { background-position: -6rem top; }
+            &.sns5 { background-image: url('../img/main/instar.png'); }
+            &.sns6 { background-position: -8rem top; }
+          }
+        }
+      }
+      .btn_total {
+        position: relative;
+        height: 26px;
+        width: 26px;;
+        &:after {
+          content:'';
+          background-image: url('../img/g_icon/sandmenu_icon.png');
         }
       }
     }
@@ -108,7 +143,6 @@ footer {
     border-top: 1px solid #f0f1f3;
     background: #f5f6fa;
     .sel {
-      float: right;
       font-size: 0;
       padding: 0 0 1.5rem;
       text-align: right;
