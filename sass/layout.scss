@@ -131,6 +131,43 @@ header {
       }
     }
   }
+  // 드롭다운 서브메뉴
+  .sub {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 160px;
+    z-index: 20;
+    padding: 0 0 2rem;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 15px 15px -4px rgba(0, 0, 0, .1);
+    border-top: 1px solid #eaeef3;
+    z-index: 999;
+    ul {
+      margin: 0 auto;
+      width: 1180px;
+      height: 100%;
+      position: relative;
+      li {
+        float: left;
+        padding: 1.5rem .5rem 0;
+        width: 196px;
+        width: 16.66%;
+        position: relative;
+        text-align: left;
+        box-sizing: border-box;
+        a {
+          display: block;
+          font-size: .85rem;
+          color: #323232;
+          line-height: 100%;
+          letter-spacing: -1px;
+        }
+      }
+    }
+  }
+
 }
 
 // footer

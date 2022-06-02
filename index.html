@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>질병관리청</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -55,6 +56,35 @@
       <ul>
         <li class="lnb1">
           <a href="./submenu1/sub1_1.html">감염병</a>
+          <!-- 서브메뉴 드롭다운메뉴 -->
+          <div class="sub">
+            <ul class="sub01">
+              <li class="sub01"><a href="#">감염병정보</a></li>
+              <li class="sub02">
+                <a href="#">해외감염정보</a>
+                <ul class="lnb_detail">
+                  <li class="lnb_detail_item"><a href="">해외감염병NOW</a></li>
+                  <li class="lnb_detail_item"><a href="">해외접종정보</a></li>
+                  <li class="lnb_detail_item"><a href="">해외여행건강정보</a></li>
+                  <li class="lnb_detail_item"><a href="">검역관리</a></li>
+                </ul>
+              </li>
+              <li class="sub03">
+                <a href="#">코로나19 유전자 감시</a>
+                <ul class="lnb_detail">
+                  <li class="lnb_detail_item"><a href="">코로나19 유전자 감시 소개</a></li>
+                  <li class="lnb_detail_item"><a href="">코로나19 변이바이러스</a></li>
+                  <li class="lnb_detail_item"><a href="">코로나19 유전자 분석 현황</a></li>
+                  <li class="lnb_detail_item"><a href="">국내 코로나19 변이바이러스 검출률</a></li>
+                  <li class="lnb_detail_item"><a href="">감시성과 활용</a></li>
+                </ul>
+              </li>
+              <li class="sub04"><a href="#">감염병간행물</a></li>
+              <li class="sub05"><a href="#">감염병유행정보</a></li>
+              <li class="sub06"><a href="#">결핵</a></li>
+              <li class="sub07"><a href="#">예방접종</a></li>
+            </ul>
+          </div>
         </li>
         <li class="lnb2">
           <a href="./submenu2/sub2_1.html">건강정보</a>
@@ -92,6 +122,13 @@
             <div class="main_slide">
               <div class="bx_wrapper">
                 <div class="bx_viewport">
+                  <ul class="main_bx">
+                    <li class="bx_clone">
+                      <a href="#">
+                        <img src="../img/main/co_new2.jpg" alt="">
+                      </a>
+                    </li>
+                  </ul>
 
                 </div>
               </div>
@@ -136,12 +173,14 @@
           <div class="tabs2">
             <ul>
               <li>
-                <span>보도자료</span>
+                <a class="news_tit" href="">보도자료</a>
                 <div class="tab_con">
                   <a href="#">
                     <h2>
                       <span class="emphasis">코로나19 국내 발생 및 예방접종 현황 (5월 30일)</span>
-                      <i><!-- new아이콘 --></i>
+                      <i>
+                        <!-- new아이콘 -->
+                      </i>
                     </h2>
                     <p>코로나19 국내 발생 및 예방접종 현황 (5월 30일) 1. 코로나19 국내 발생 현황 □ 중앙방역대책본부(본부장: 백경란 청장)는 5월 30일 0시 기준으로 재원중 위중증 환자는.....</p>
                     <span>2022-05-30</span>
@@ -154,9 +193,9 @@
                   </ul>
                 </div>
               </li>
-              <li><span>공지사항</span></li>
-              <li><span>채용공고</span></li>
-              <li><span>주간건강과질병</span></li>
+              <li><a class="news_tit" href="">공지사항</a></li>
+              <li><a class="news_tit" href="">채용공고</a></li>
+              <li><a class="news_tit" href="">주간건강과질병</a></li>
             </ul>
           </div>
         </div>
@@ -200,17 +239,49 @@
           </div>
         </div>
       </div>
+      <!-- 슬라이드3개 -->
       <section class="slide_zone">
         <article class="">
           <h3>배너존</h3>
           <div class="bx-wrapper">
-            <div class="bx_viewport"></div>
+            <div class="bx_viewport">
+              <div class="slider2 swipe">
+                <div class="bx_clone">
+                  <a href="#"><img src="../img/main/banner_1.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
           </div>
-
+        </article>
+        <article class="">
+          <h3>알림존</h3>
+          <div class="bx-wrapper">
+            <div class="bx_viewport">
+              <div class="slider2 swipe">
+                <div class="bx_clone">
+                  <a href="#"><img src="../img/main/notice_1.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="">
+          <h3>카드뉴스2</h3>
+          <div class="bx-wrapper">
+            <div class="bx_viewport">
+              <div class="slider2 swipe">
+                <div class="bx_clone">
+                  <a href="#"><img src="../img/main/cardnews_1.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
       </section>
       <section class="static_link">
-        <h2><p>만성질환<br>건강통계</p></h2>
+        <h2>
+          <p>만성질환<br>건강통계</p>
+        </h2>
         <div class="stat_slide">
           <div class="bx_wrapper">
             <div class="bx_viewport">
@@ -218,17 +289,35 @@
                 <li>
                   <!-- 슬라이드 첫페이지 -->
                   <ul>
-                    <li class="ico1"></li>
-                    <li class="ico2"></li>
-                    <li class="ico3"></li>
-                    <li class="ico4"></li>
-                    <li class="ico5"></li>
-                    <li class="ico6"></li>
+                    <li class="ico1">
+                      <a href="#"><strong>금연</strong></a>
+                    </li>
+                    <li class="ico2">
+                      <a href="#"><strong>흡연</strong></a>
+                    </li>
+                    <li class="ico3">
+                      <a href="#"><strong>간접흡연</strong></a>
+                    </li>
+                    <li class="ico4">
+                      <a href="#"><strong>전자담배</strong></a>
+                    </li>
+                    <li class="ico5">
+                      <a href="#"><strong>음주</strong></a>
+                    </li>
+                    <li class="ico6">
+                      <a href="#"><strong>고위험음주</strong></a>
+                    </li>
                   </ul>
                 </li>
-                <li></li>
-                <li></li>
+                <!-- <li></li>
+                <li></li> -->
               </ul>
+            </div>
+            <div class="bx_controls">
+              <div class="bx_controls_direction">
+                <a href="" class="bx_prev"></a>
+                <a href="" class="bx_next"></a>
+              </div>
             </div>
           </div>
         </div>
