@@ -1,3 +1,38 @@
 // subpage content title+text
+// 서브페이지에 공통으로 들어가는 텍스트 속성
 // h3.subTitle
+h3.subTitle {
+  position: relative;
+  color: #043763;
+  margin: 1rem 0 .7rem;
+  font-size: 1.266em;
+  letter-spacing: -.03em;
+  padding-left: 1.2rem;
+  &:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border: 3px solid #11416b;
+    border-radius: 50%;
+    position: absolute;
+    left: .2rem;
+    top: .55em;
+    box-sizing: inherit;
+  }
+}
 // p.subText
+p.subText {
+  position: relative;
+  margin-left: 1.2rem;
+  color: #555;
+  &.list:before {
+    content: '';
+    background-color: #4d4d4d;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;;
+    top: .6em;
+  }
+}

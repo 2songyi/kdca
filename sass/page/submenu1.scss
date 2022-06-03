@@ -3,6 +3,10 @@ body.sub1_1 {
   .content_body {
     .diseaseTopBg {
       background: url('../img/sub1/diseBg.png') no-repeat;
+      height: 15.5rem;
+      position: relative;
+      clear: both;
+      margin-bottom: .5rem;
       h2 {
         font-size: 2.8em;
         font-weight: 600;
@@ -19,6 +23,18 @@ body.sub1_1 {
       }
       .siteBtn {
         margin: .5rem 0 0 2rem;
+        a {
+          font-size: .933rem;
+          font-weight: 600;
+          display: inline-block;
+          background: #f05b5b;
+          color: #fff;
+          text-align: center;
+          padding: 10px 20px;
+          line-height: 1.2;
+          vertical-align: top;
+          letter-spacing: -0.1em;
+        }
       }
     }
   }
