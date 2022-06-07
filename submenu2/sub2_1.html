@@ -1,71 +1,223 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>건강위해정보</title>
-    <link rel="stylesheet" href="../css/style.min.css">
-  </head>
-  <body>
-    <!-- footer area -->
-    <footer id="footer">
-      <div class="btm">
-        <div class="sel">
-          <div class="select_type1">
-            <h2><a href="#">질병관리청 소속기관</a></h2>
-            <ul>
-              <li><a href="#">국립보건연구원</a></li>
-              <li><a href="#">국립감염병연구소</a></li>
-              <li><a href="#">국립검역소</a></li>
-              <li><a href="#">국립마산병원</a></li>
-              <li><a href="#">국립목포병원</a></li>
+
+<head>
+  <meta charset="utf-8">
+  <title>건강위해정보</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+</head>
+
+<body class="sub2_1">
+  <!-- header영역 -->
+  <header>
+    <div class="header-wrap">
+      <h1 class="logo">
+        <a href="../index.html">
+          <img src="../img/header/h1_logo.png" alt="">
+        </a>
+      </h1>
+      <div class="search">
+        <form class="searchbox" action="index.html" method="post">
+          <label for=""></label>
+          <input type="text" name="" value="" placeholder="검색어를 입력해주세요.">
+          <a href="#"></a>
+        </form>
+      </div>
+      <div class="right">
+        <!-- sns영역 -->
+        <ul class="snsArea">
+          <li>
+            <a href="http://www.facebook.com" class="sns1"><span class="clip">페이스북</span></a>
+          </li>
+          <li>
+            <a href="http://twitter.com" class="sns2"><span class="clip">트위터</span></a>
+          </li>
+          <li>
+            <a href="http://naver.com" class="sns3"><span class="clip">네이버</span></a>
+          </li>
+          <li>
+            <a href="http://youtube.com" class="sns4"><span class="clip">유튜브</span></a>
+          </li>
+          <li>
+            <a href="http://instagram.com" class="sns5"><span class="clip">인스타그램</span></a>
+          </li>
+          <li>
+            <a href="#" class="sns6"><span class="clip">영문홈페이지</span></a>
+          </li>
+        </ul>
+        <!-- <div class="btn_total"><a href="#"></a></div> -->
+        <a href="#" class="btn_total">
+          <span></span>
+        </a>
+      </div>
+    </div>
+    <div class="gnb">
+      <ul>
+        <li class="lnb1">
+          <a href="../submenu1/sub1_1.html">감염병</a>
+          <!-- 서브메뉴 드롭다운메뉴 -->
+          <div class="sub">
+            <ul class="sub01">
+              <li class="sub01"><a href="#">감염병정보</a></li>
+              <li class="sub02">
+                <a href="#">해외감염정보</a>
+                <ul class="lnb_detail">
+                  <li class="lnb_detail_item"><a href="">해외감염병NOW</a></li>
+                  <li class="lnb_detail_item"><a href="">해외접종정보</a></li>
+                  <li class="lnb_detail_item"><a href="">해외여행건강정보</a></li>
+                  <li class="lnb_detail_item"><a href="">검역관리</a></li>
+                </ul>
+              </li>
+              <li class="sub03">
+                <a href="#">코로나19 유전자 감시</a>
+                <ul class="lnb_detail">
+                  <li class="lnb_detail_item"><a href="">코로나19 유전자 감시 소개</a></li>
+                  <li class="lnb_detail_item"><a href="">코로나19 변이바이러스</a></li>
+                  <li class="lnb_detail_item"><a href="">코로나19 유전자 분석 현황</a></li>
+                  <li class="lnb_detail_item"><a href="">국내 코로나19 변이바이러스 검출률</a></li>
+                  <li class="lnb_detail_item"><a href="">감시성과 활용</a></li>
+                </ul>
+              </li>
+              <li class="sub04"><a href="#">감염병간행물</a></li>
+              <li class="sub05"><a href="#">감염병유행정보</a></li>
+              <li class="sub06"><a href="#">결핵</a></li>
+              <li class="sub07"><a href="#">예방접종</a></li>
             </ul>
           </div>
-          <div class="select_type1">
-            <h2><a href="#">사업별 누리집</a></h2>
-            <ul>
-              <li><a href="#">감염병포털</a></li>
-              <li><a href="#">예방접종도우미</a></li>
-              <li><a href="#">해외감염병NOW</a></li>
-              <li><a href="#">국립검역소</a></li>
-              <li><a href="#">KISED</a></li>
-              <li><a href="#">결핵제로</a></li>
-            </ul>
-          </div>
-          <div class="select_type1">
-            <h2><a href="#">관련국외기관</a></h2>
-            <ul>
-              <li><a href="#">미국질병통제예방센터[CDC]</a></li>
-              <li><a href="#">유럽질병통제예방센터[ECDC]</a></li>
-              <li><a href="#">세계보간기구[WHO]</a></li>
-              <li><a href="#">일본감염병연구소[NIID]</a></li>
-              <li><a href="#">영국공공보건국[PHE]</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="in_btm">
-          <div class="left">
-            <nav class="move">
+        </li>
+        <li class="lnb2">
+          <a href="../submenu2/sub2_1.html">건강정보</a>
+        </li>
+        <li class="lnb3">
+          <a href="../submenu3/sub3_1.html">정책정보</a>
+        </li>
+        <li class="lnb4">
+          <a href="../submenu4/sub4_1.html">연구개발</a>
+        </li>
+        <li class="lnb5">
+          <a href="../submenu5/sub5_1.html">알림·자료</a>
+        </li>
+        <li class="lnb6">
+          <a href="../submenu6/sub6_1.html">건행물·통계</a>
+        </li>
+        <li class="lnb7">
+          <a href="../submenu7/sub7_1.html">민원·정보공개</a>
+        </li>
+        <li class="lnb8">
+          <a href="../submenu8/sub8_1.html">기관소개</a>
+        </li>
+        <li class="lnb9">
+          <a href="../submenu9/sub9_1.html">사업별 누리집</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- content area -->
+  <!-- submenu common -->
+  <main id="container">
+    <div id="contentWrap">
+      <section id="snb">
+        <h2 class="title">건강정보</h2>
+        <nav class="nav">
+          <ul id="left_menu_top">
+            <li><a href="#">건강위해정보</a></li>
+            <li><a href="#">국가건강정보포털</a></li>
+            <li><a href="#">희귀질환정보</a></li>
+            <li><a href="#">국가손상정보포털</a></li>
+          </ul>
+        </nav>
+      </section>
+      <div class="section" id="content">
+        <div class="content_info">
+          <h2 class="title">흡연폐해</h2>
+          <div class="location_wrap">
+            <nav class="location">
               <ul>
-                <li><a href="#">이용안내</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">웹접근성품질인증</a></li>
-                <li><a href="#">저작권정책</a></li>
-                <li><a href="#">오시는길</a></li>
+                <li><a href=""><img class="home" src="../img/g_icon/home_icon.png" alt=""></a></li>
+                <li><a href="">건강정보</a></li>
+                <li><a href="">건강위해정보</a></li>
               </ul>
             </nav>
-            <address class="top2">
-              (28159)충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청 ☎1399
-            </address>
-            <address>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.</address>
           </div>
-          <div class="right">
-            <a href="#"><img src="./img/header/2020_slogan1.png" alt=""></a>
-            <a href="#"><img src="./img/header/2020_slogan2.png" alt=""></a>
-            <a href="#"><img src="./img/header/footer_img1.png" alt=""></a>
-            <a href="#"><img src="./img/header/footer_img2.png" alt=""></a>
-          </div>
+          <div class="util"></div>
+          <ul class="info">
+            <li><span>작성일</span><b>2022-05-24</b></li>
+            <li><span>최종수정일</span><b>2022-05-24</b></li>
+            <li><span>담당부서</span><b>건강위해대응과</b></li>
+            <li><span>연락처</span><b>043-719-2920</b></li>
+          </ul>
+        </div>
+        <!-- common area 끝 -->
+        <div id="content_detail" class="content_body">
+          <h3 class="subTitle">일반담배(궐련)-우리나라</h3>
+          <p class="subText">만 19세 이상 성인에서 220년 20.6%(남성 34.0%, 여성 6.6%)임</p>
+          <p class="subText">성인 남성 흡연율은 1998년 66.3%에 비해 절반수준으로 감소하였으나, 2008년 이후에 감소폭이둔화하는 경향을 보임</p>
+          <p class="subText">성인 여성 흡연율은 지난 20년 동안 거의 변동 없음</p>
+          <img src="../img/sub2/chart001.jpg" alt="">
         </div>
       </div>
-    </footer>
-  </body>
+  </main>
+  <!-- footer area -->
+  <footer id="footer">
+    <div class="btm">
+      <div class="sel">
+        <div class="select_type1">
+          <h2><a href="#">질병관리청 소속기관</a></h2>
+          <ul>
+            <li><a href="#">국립보건연구원</a></li>
+            <li><a href="#">국립감염병연구소</a></li>
+            <li><a href="#">국립검역소</a></li>
+            <li><a href="#">국립마산병원</a></li>
+            <li><a href="#">국립목포병원</a></li>
+          </ul>
+        </div>
+        <div class="select_type1">
+          <h2><a href="#">사업별 누리집</a></h2>
+          <ul>
+            <li><a href="#">감염병포털</a></li>
+            <li><a href="#">예방접종도우미</a></li>
+            <li><a href="#">해외감염병NOW</a></li>
+            <li><a href="#">국립검역소</a></li>
+            <li><a href="#">KISED</a></li>
+            <li><a href="#">결핵제로</a></li>
+          </ul>
+        </div>
+        <div class="select_type1">
+          <h2><a href="#">관련국외기관</a></h2>
+          <ul>
+            <li><a href="#">미국질병통제예방센터[CDC]</a></li>
+            <li><a href="#">유럽질병통제예방센터[ECDC]</a></li>
+            <li><a href="#">세계보간기구[WHO]</a></li>
+            <li><a href="#">일본감염병연구소[NIID]</a></li>
+            <li><a href="#">영국공공보건국[PHE]</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="in_btm">
+        <div class="left">
+          <nav class="move">
+            <ul>
+              <li><a href="#">이용안내</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">웹접근성품질인증</a></li>
+              <li><a href="#">저작권정책</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </nav>
+          <address class="top2">
+            (28159)충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청 ☎1399
+          </address>
+          <address>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.</address>
+        </div>
+        <div class="right">
+          <a href="#"><img src="./img/header/2020_slogan1.png" alt=""></a>
+          <a href="#"><img src="./img/header/2020_slogan2.png" alt=""></a>
+          <a href="#"><img src="./img/header/footer_img1.png" alt=""></a>
+          <a href="#"><img src="./img/header/footer_img2.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
